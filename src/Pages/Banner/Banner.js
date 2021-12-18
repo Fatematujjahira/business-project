@@ -1,7 +1,8 @@
 import React from "react";
 // import "./Banner.css";
 import "./style.css";
-import hero from "../../img/hero-img.png";
+// import hero from "../../img/hero-img.png";
+import banner from "../../img/hero-img.png";
 import img1 from "../../img/clients/client-1.png";
 import img2 from "../../img/clients/client-2.png";
 import img3 from "../../img/clients/client-3.png";
@@ -12,6 +13,12 @@ import service1 from "../../img/features-2.svg";
 import service2 from "../../img/features-3.svg";
 import service3 from "../../img/features-4.svg";
 import service from "../../img/features-1.svg";
+import agent2 from "../../img/team/team-4.jpg";
+import agent1 from "../../img/team/team-2.jpg";
+import agent5 from "../../img/team/team-3.jpg";
+import agent3 from "../../img/team/team-1.jpg";
+import Allpage from "../All/Allpage.js";
+import Propertice from "../Propertise/Propertice.js";
 
 // import img from "../../img/clients/client-6.png";
 
@@ -20,7 +27,7 @@ const Banner = () => {
     <div>
       {/* <!-- ======= Header ======= --> */}
       <header id="header">
-        <div class="container d-flex align-items-center justify-content-between">
+        <div class="container fatema d-flex align-items-center justify-content-between">
           <div class="logo">
             <h1>
               <a href="index.html">
@@ -46,8 +53,8 @@ const Banner = () => {
                 </a>
               </li>
               <li>
-                <a class="nav-link scrollto" href="#services">
-                  Services
+                <a class="nav-link scrollto" href="#features">
+                  Feature
                 </a>
               </li>
               <li>
@@ -138,7 +145,7 @@ const Banner = () => {
               class="col-lg-6 order-1 order-lg-2 hero-img"
               data-aos="fade-left"
             >
-              <img src={hero} class="img-fluid" alt="" />
+              <img src={banner} class="img-fluid" alt="" />
             </div>
           </div>
         </div>
@@ -146,154 +153,80 @@ const Banner = () => {
 
       <main id="main">
         {/* <!-- ======= Clients Section ======= --> */}
-        <section id="clients" class="clients section-bg">
-          <div class="container">
-            <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
-              <div class="col-lg-2 col-md-4 col-6">
+
+        <section id="clients" class="clients">
+          <div class="container client">
+            <div class="section-title" data-aos="fade-up">
+              <h2>
+                Our <strong>Clients</strong>
+              </h2>
+              <p>
+                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                Quia fugiat sit in iste officiis commodi quidem hic quas.
+              </p>
+            </div>
+
+            <div
+              class="row no-gutters clients-wrap clearfix"
+              data-aos="fade-up"
+            >
+              <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="client-logo">
-                  <img
-                    src={img1}
-                    class="img-fluid"
-                    alt=""
-                    data-aos="flip-right"
-                  />
+                  <img src={img} class="img-fluid" alt="" />
                 </div>
               </div>
 
-              <div class="col-lg-2 col-md-4 col-6">
+              <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="client-logo">
-                  <img
-                    src={img2}
-                    class="img-fluid"
-                    alt=""
-                    data-aos="flip-right"
-                    data-aos-delay="100"
-                  />
+                  <img src={img1} class="img-fluid" alt="" />
                 </div>
               </div>
 
-              <div class="col-lg-2 col-md-4 col-6">
+              <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="client-logo">
-                  <img
-                    src={img3}
-                    class="img-fluid"
-                    alt=""
-                    data-aos="flip-right"
-                    data-aos-delay="200"
-                  />
+                  <img src={img3} class="img-fluid" alt="" />
                 </div>
               </div>
 
-              <div class="col-lg-2 col-md-4 col-6">
+              <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="client-logo">
-                  <img
-                    src={img4}
-                    class="img-fluid"
-                    alt=""
-                    data-aos="flip-right"
-                    data-aos-delay="300"
-                  />
+                  <img src={img4} class="img-fluid" alt="" />
                 </div>
               </div>
 
-              <div class="col-lg-2 col-md-4 col-6">
+              <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="client-logo">
-                  <img
-                    src={img5}
-                    class="img-fluid"
-                    alt=""
-                    data-aos="flip-right"
-                    data-aos-delay="400"
-                  />
+                  <img src={img5} class="img-fluid" alt="" />
                 </div>
               </div>
 
-              <div class="col-lg-2 col-md-4 col-6">
+              <div class="col-lg-3 col-md-4 col-xs-6">
                 <div class="client-logo">
-                  <img src={img} alt="" />
+                  <img src={img5} class="img-fluid" alt="" />
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="client-logo">
+                  <img src={img3} class="img-fluid" alt="" />
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="client-logo">
+                  <img src={img4} class="img-fluid" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <Allpage></Allpage>
+        <Propertice></Propertice>
         {/* <!-- End Clients Section -->
 
-    <!-- ======= About Section ======= --> */}
-        <section id="about" class="about section-bg">
-          <div class="container">
-            <div class="row">
-              <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"></div>
-              <div class="col-xl-7 pl-0 pl-lg-5 pr-lg-1 d-flex align-items-stretch">
-                <div class="content d-flex flex-column justify-content-center">
-                  <h3 data-aos="fade-in" data-aos-delay="100">
-                    Voluptatem dignissimos provident quasi
-                  </h3>
-                  <p data-aos="fade-in">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Duis aute irure dolor in reprehenderit
-                  </p>
-                  <div class="row">
-                    <div class="col-md-6 icon-box" data-aos="fade-up">
-                      <i class="bx bx-receipt"></i>
-                      <h4>
-                        <a href="#">Corporis voluptates sit</a>
-                      </h4>
-                      <p>
-                        Consequuntur sunt aut quasi enim aliquam quae harum
-                        pariatur laboris nisi ut aliquip
-                      </p>
-                    </div>
-                    <div
-                      class="col-md-6 icon-box"
-                      data-aos="fade-up"
-                      data-aos-delay="100"
-                    >
-                      <i class="bx bx-cube-alt"></i>
-                      <h4>
-                        <a href="#">Ullamco laboris nisi</a>
-                      </h4>
-                      <p>
-                        Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt
-                      </p>
-                    </div>
-                    <div
-                      class="col-md-6 icon-box"
-                      data-aos="fade-up"
-                      data-aos-delay="200"
-                    >
-                      <i class="bx bx-images"></i>
-                      <h4>
-                        <a href="#">Labore consequatur</a>
-                      </h4>
-                      <p>
-                        Aut suscipit aut cum nemo deleniti aut omnis. Doloribus
-                        ut maiores omnis facere
-                      </p>
-                    </div>
-                    <div
-                      class="col-md-6 icon-box"
-                      data-aos="fade-up"
-                      data-aos-delay="300"
-                    >
-                      <i class="bx bx-shield"></i>
-                      <h4>
-                        <a href="#">Beatae veritatis</a>
-                      </h4>
-                      <p>
-                        Expedita veritatis consequuntur nihil tempore laudantium
-                        vitae denat pacta
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* <!-- End About Section -->
-
+   
     <!-- ======= Services Section ======= --> */}
 
         <section id="features" class="features section-bg">
@@ -417,279 +350,6 @@ const Banner = () => {
         </section>
         {/* <!-- End Features Section --> */}
 
-        {/* <!-- ======= Portfolio Section ======= --> */}
-        <section id="portfolio" class="portfolio section-bg">
-          <div class="container">
-            <div class="section-title">
-              <h2 data-aos="fade-in">Portfolio</h2>
-              <p data-aos="fade-in">
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                Quia fugiat sit in iste officiis commodi quidem hic quas.
-              </p>
-            </div>
-
-            <div class="row">
-              <div class="col-lg-12">
-                <ul id="portfolio-flters">
-                  <li data-filter="*" class="filter-active">
-                    All
-                  </li>
-                  <li data-filter=".filter-app">App</li>
-                  <li data-filter=".filter-card">Card</li>
-                  <li data-filter=".filter-web">Web</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="row portfolio-container" data-aos="fade-up">
-              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-1.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/portfolio-1.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="App 1"
-                    >
-                      <i class="bi bi-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" title="More Details">
-                      <i class="bi bi-link"></i>
-                    </a>
-                  </div>
-                  <div class="portfolio-info">
-                    <h4>App 1</h4>
-                    <p>App</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-2.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/portfolio-2.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Web 3"
-                    >
-                      <i class="bi bi-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" title="More Details">
-                      <i class="bi bi-link"></i>
-                    </a>
-                  </div>
-                  <div class="portfolio-info">
-                    <h4>Web 3</h4>
-                    <p>Web</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-3.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/portfolio-3.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="App 2"
-                    >
-                      <i class="bi bi-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" title="More Details">
-                      <i class="bi bi-link"></i>
-                    </a>
-                  </div>
-                  <div class="portfolio-info">
-                    <h4>App 2</h4>
-                    <p>App</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-4.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/portfolio-4.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Card 2"
-                    >
-                      <i class="bi bi-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" title="More Details">
-                      <i class="bi bi-link"></i>
-                    </a>
-                  </div>
-                  <div class="portfolio-info">
-                    <h4>Card 2</h4>
-                    <p>Card</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-5.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/portfolio-5.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Web 2"
-                    >
-                      <i class="bi bi-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" title="More Details">
-                      <i class="bi bi-link"></i>
-                    </a>
-                  </div>
-                  <div class="portfolio-info">
-                    <h4>Web 2</h4>
-                    <p>Web</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                <div class="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-6.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/portfolio-6.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="App 3"
-                    >
-                      <i class="bi bi-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" title="More Details">
-                      <i class="bi bi-link"></i>
-                    </a>
-                  </div>
-                  <div class="portfolio-info">
-                    <h4>App 3</h4>
-                    <p>App</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-7.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/portfolio-7.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Card 1"
-                    >
-                      <i class="bi bi-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" title="More Details">
-                      <i class="bi bi-link"></i>
-                    </a>
-                  </div>
-                  <div class="portfolio-info">
-                    <h4>Card 1</h4>
-                    <p>Card</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                <div class="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-8.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/portfolio-8.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Card 3"
-                    >
-                      <i class="bi bi-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" title="More Details">
-                      <i class="bi bi-link"></i>
-                    </a>
-                  </div>
-                  <div class="portfolio-info">
-                    <h4>Card 3</h4>
-                    <p>Card</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                <div class="portfolio-wrap">
-                  <img
-                    src="assets/img/portfolio/portfolio-9.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-links">
-                    <a
-                      href="assets/img/portfolio/portfolio-9.jpg"
-                      data-gallery="portfolioGallery"
-                      class="portfolio-lightbox"
-                      title="Web 3"
-                    >
-                      <i class="bi bi-plus"></i>
-                    </a>
-                    <a href="portfolio-details.html" title="More Details">
-                      <i class="bi bi-link"></i>
-                    </a>
-                  </div>
-                  <div class="portfolio-info">
-                    <h4>Web 3</h4>
-                    <p>Web</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* <!-- ======= Team Section ======= --> */}
         <section id="team" class="team section-bg">
           <div class="container">
@@ -707,7 +367,7 @@ const Banner = () => {
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="member" data-aos="fade-up">
                   <div class="pic">
-                    <img src="assets/img/team/team-1.jpg" alt="" />
+                    <img src={agent1} alt="" />
                   </div>
                   <h4>Walter White</h4>
                   <span>Chief Executive Officer</span>
@@ -731,7 +391,7 @@ const Banner = () => {
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="member" data-aos="fade-up" data-aos-delay="100">
                   <div class="pic">
-                    <img src="assets/img/team/team-2.jpg" alt="" />
+                    <img src={agent3} alt="" />
                   </div>
                   <h4>Sarah Jhinson</h4>
                   <span>Product Manager</span>
@@ -755,7 +415,7 @@ const Banner = () => {
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="member" data-aos="fade-up" data-aos-delay="200">
                   <div class="pic">
-                    <img src="assets/img/team/team-3.jpg" alt="" />
+                    <img src={agent2} alt="" />
                   </div>
                   <h4>William Anderson</h4>
                   <span>CTO</span>
@@ -779,7 +439,7 @@ const Banner = () => {
               <div class="col-xl-3 col-lg-4 col-md-6">
                 <div class="member" data-aos="fade-up" data-aos-delay="300">
                   <div class="pic">
-                    <img src="assets/img/team/team-4.jpg" alt="" />
+                    <img src={agent5} alt="" />
                   </div>
                   <h4>Amanda Jepson</h4>
                   <span>Accountant</span>
@@ -924,7 +584,7 @@ const Banner = () => {
               data-aos="fade-up"
             >
               <div class="col-lg-5">
-                <i class="bx bx-help-circle"></i>
+                <i class="far fa-question-circle"></i>
                 <h4>Non consectetur a erat nam at lectus urna duis?</h4>
               </div>
               <div class="col-lg-7">
@@ -942,7 +602,7 @@ const Banner = () => {
               data-aos-delay="100"
             >
               <div class="col-lg-5">
-                <i class="bx bx-help-circle"></i>
+                <i class="far fa-question-circle"></i>
                 <h4>
                   Feugiat scelerisque varius morbi enim nunc faucibus a
                   pellentesque?
@@ -964,7 +624,7 @@ const Banner = () => {
               data-aos-delay="200"
             >
               <div class="col-lg-5">
-                <i class="bx bx-help-circle"></i>
+                <i class="far fa-question-circle"></i>
                 <h4>
                   Dolor sit amet consectetur adipiscing elit pellentesque
                   habitant morbi?
@@ -987,7 +647,7 @@ const Banner = () => {
               data-aos-delay="300"
             >
               <div class="col-lg-5">
-                <i class="bx bx-help-circle"></i>
+                <i class="far fa-question-circle"></i>
                 <h4>
                   Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
                 </h4>
@@ -1008,7 +668,7 @@ const Banner = () => {
               data-aos-delay="400"
             >
               <div class="col-lg-5">
-                <i class="bx bx-help-circle"></i>
+                <i class="far fa-question-circle"></i>
                 <h4>
                   Tempus quam pellentesque nec nam aliquam sem et tortor
                   consequat?

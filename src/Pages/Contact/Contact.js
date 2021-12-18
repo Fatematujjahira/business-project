@@ -16,14 +16,14 @@ const Contact = () => {
               <div class="row">
                 <div class="col-md-12">
                   <div class="info-box">
-                    <i class="bx bx-map"></i>
+                    <i class="fas fa-map"></i>
                     <h3>Our Address</h3>
                     <p>A108 Adam Street, New York, NY 535022</p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="info-box mt-4">
-                    <i class="bx bx-envelope"></i>
+                    <i class="fas fa-envelope"></i>
                     <h3>Email Us</h3>
                     <p>
                       info@example.com
@@ -34,7 +34,7 @@ const Contact = () => {
                 </div>
                 <div class="col-md-6">
                   <div class="info-box mt-4">
-                    <i class="bx bx-phone-call"></i>
+                    <i class="fas fa-phone"></i>
                     <h3>Call Us</h3>
                     <p>
                       +1 5589 55488 55

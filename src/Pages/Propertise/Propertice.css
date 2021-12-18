@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+.about-us {
+  background-color: rgb(234, 245, 255);
+}
+.about-us .content {
+  padding: 30px 0;
+  background: linear-gradient(180deg, #bddefb 0%, #d9edfe 35%, #c4e7f4 100%);
+  border-radius: 50px 0px;
+}
+.about-us .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+}
+.about-us .content p {
+  margin-bottom: 0;
+}
+.about-us .content .icon-box {
+  margin-top: 25px;
+}
+.about-us .content .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 5px 0 10px 60px;
+}
+.about-us .content .icon-box i {
+  font-size: 48px;
+  float: left;
+  color: #0531b5cb;
+}
+.about-us .content .icon-box p {
+  font-size: 15px;
+  color: #0d406d9e;
+  margin-left: 60px;
+}
+.about-us .image {
+  background: url("../../img/about.jpg"), center center no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+@media (max-width: 991px) {
+  .about-us .image {
+    text-align: center;
+  }
+  .about-us .image img {
+    max-width: 80%;
+  }
+}
+@media (max-width: 667px) {
+  .about-us .image img {
+    max-width: 100%;
+  }
+}

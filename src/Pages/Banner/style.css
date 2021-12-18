@@ -42,7 +42,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #213b52;
+  background: #013767;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -77,7 +77,7 @@ h6 {
   z-index: 997;
   transition: all 0.5s;
   padding: 16px 0;
-  background: #213b52;
+  background: #143e65;
 }
 #header .logo h1 {
   font-size: 24px;
@@ -130,7 +130,7 @@ h6 {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 14px;
-  color: #adc7de;
+  color: #1a5e9a;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -144,7 +144,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover > a {
-  color: #fff;
+  color: rgb(216, 10, 10);
 }
 .navbar .getstarted,
 .navbar .getstarted:focus {
@@ -183,10 +183,20 @@ h6 {
   font-size: 14px;
   text-transform: none;
   font-weight: 500;
-  color: #3e6f9b;
+  color: #22486a;
 }
 .navbar .dropdown ul a i {
   font-size: 12px;
+}
+.fatema {
+  background: linear-gradient(
+    180deg,
+    #82b7d3 0%,
+    #a2caed 35%,
+    #bfe2ff 100%
+  ) !important;
+  border-radius: 5px;
+  box-shadow: 10px #b8c3cd;
 }
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
@@ -325,19 +335,19 @@ h6 {
 #hero {
   width: 100%;
   padding: 0 0 0 0;
-  background: #213b52;
-  background: linear-gradient(180deg, #213b52 0%, #213c54 35%, #204564 100%);
+  background: #618fb8;
+  background: linear-gradient(180deg, #62a1d7 0%, #bfe1ff 35%, #b0dced 100%);
 }
 #hero h1 {
   margin: 0 0 15px 0;
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #d2e0ed;
+  color: #355778;
   font-family: "Poppins", sans-serif;
 }
 #hero h2 {
-  color: #fff;
+  color: rgb(96, 117, 135);
   margin-bottom: 30px;
   font-size: 22px;
 }
@@ -482,6 +492,7 @@ section {
 --------------------------------------------------------------*/
 .clients {
   padding: 0;
+  background-color: #f9fcff;
 }
 .clients .client-logo {
   display: flex;
@@ -505,6 +516,7 @@ section {
 --------------------------------------------------------------*/
 .about .content {
   padding: 30px 0;
+  background-color: #cbe4fa;
 }
 .about .content h3 {
   font-weight: 700;
